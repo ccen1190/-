@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 
 <head>
-  <title>110570025陳盈蓁</title>
+  <title>110570025 陳盈蓁</title>
   <meta name="description" content="free website template" />
   <meta name="keywords" content="enter your keywords here" />
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -27,97 +27,97 @@
     </script>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () 
+  function show1()
   {
-  const button = document.getElementById("b1");
-  const status = document.getElementById("status");
-
-  function show1() 
-  {
-    button.style.backgroundColor = "yellow";
-    button.style.color = "blue";
-    status.textContent = "滑鼠滑過";
+    document.getElementById("r11").className = "s1"
+    document.getElementById("r21").className = "s1"
+    document.getElementById("r31").className = "s1"
+    document.getElementById("r41").className = "s1"
   }
-
-  function show2() 
-  {
-    button.style.backgroundColor = "yellow";
-    button.style.color = "red";
-    status.textContent = "滑鼠離開";
-  }
-
-  function show3() {
-    button.style.backgroundColor = "blue";
-    button.style.color = "yellow";
-    button.style.fontStyle = "italic";
-    status.textContent = "滑鼠按下";
-  }
-
-  function show4() {
-    button.style.backgroundColor = "yellow";
-    button.style.color = "green";
-    button.style.fontStyle = "normal";
-    status.textContent = "滑鼠放開";
-  }
-  button.onmouseover = show1;
-      button.onmouseout = show2;
-      button.onmousedown = show3;
-      button.onmouseup = show4;
-    });
 </script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-E1CK7NJQLR"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-E1CK7NJQLR');
+  function show2()
+  {
+    document.getElementById("r12").className = "s2"
+    document.getElementById("r22").className = "s2"
+    document.getElementById("r32").className = "s2"
+    document.getElementById("r42").className = "s2"
+  }
 </script>
+<script>
+  function show3()
+  {
+    document.getElementById("r13").className = "s3"
+    document.getElementById("r23").className = "s3"
+    document.getElementById("r33").className = "s3"
+    document.getElementById("r43").className = "s3"
+  }
+</script>
+
 </head>
 
 <body>
   <div id="main">	
-    <div id="site_content">  
-	  <div id="menubar">
-        <ul class="lavaLampWithImage" id="lava_menu">
-          <li class="current"><a href="index.html">首頁</a></li>
-          <li><a href="a1.html">第1題</a></li>
-          <li><a href="a2.html">第2題</a></li>
-          <li><a href="a3.html">第3題</a></li>
-          <li><a href="a4.html">GSC圖片</a></li>
-          <li><a href="a5.html">GA圖片</a></li>
-          <li><a href="a6.html">挑戰題</a></li>
-        </ul>
-	  </div><!--close menubar-->
-      <div id="header">  
-        <h1>110570025陳盈蓁</h1>	
+	<div id="menubar">
+      <ul class="lavaLampWithImage" id="lava_menu">
+        <li class="current"><a href="index.html">首頁</a></li>
+        <li><a href="a1.html">第1題</a></li>
+        <li><a href="a2.html">第2題</a></li>
+        <li><a href="a3.html">第3題</a></li>
+        <li><a href="a4.html">第4題</a></li>
+        <li><a href="a5.html">GSC截圖</a></li>
+        <li><a href="a6.html">GA截圖</a></li>
+      </ul>
+	</div><!--close menubar-->	    
+	<div id="site_content">        	  
+	  <div id="header"> 
+        <div id="header_name"> 	  
+          <h1>陳盈蓁，作業11</h1>
+        </div><!--close header_name-->	
+        <div id="header_slogan"> 		
+	      <h2>Company Slogan Goes Here</h2>
+		 </div><!--close header_slogan-->	
       </div><!--close header-->	
 	  <div id="banner_image">
 	    <div id="slider-wrapper">        
           <div id="slider" class="nivoSlider">
             <img src="images/slide1.jpg" alt="" />
             <img src="images/slide2.jpg" alt="" />
-            <img src="images/slide3.jpg" alt="" />
-		  </div><!--close slider-->
+		  </div>
 		</div><!--close slider-wrapper-->
-	  </div><!--close banner_image-->		  
+	  </div><!--close banner_image-->			  
       <div id="content">
         <div class="content_item">
-          <h1 class="s4">滑鼠事件</h1>
+          <h1>改變表格css</h1>
           <hr>
+          <P>
+            <table border="1" width="70%">
+              <tr>
+                <td id="r11">產品</td>
+                <td id="r12">數量</td>
+                <td id="r13">價格</td>
+              </tr>
+              <tr>
+                <td id="r21">筆電</td>
+                <td id="r22">105</td>
+                <td id="r23">30000</td>
+              </tr>
+              <tr>
+                <td id="r31">手機</td>
+                <td id="r32">20</td>
+                <td id="r33">15000</td>
+              </tr>
+              <tr>
+                <td id="r41">平板</td>
+                <td id="r42">15</td>
+                <td id="r43">7000</td>
+              </tr>
+            </table>
+            <button onclick="show1()" class="s3" id="b1" >第1欄css</button>
+            <button onclick="show2()" class="s3" id="b2" >第2欄css</button>
+            <button onclick="show3()" class="s3" id="b3" >第3欄css</button>
 
-          <button 
-          id="b1"
-          onmouseup="show4()" 
-          onmousedown="show3()" 
-          onmouseout="show2()" 
-          onmouseover="show1()"
-          style="background-color: yellow;color: red;font-size: 30px;font-weight: bolder;">
-          各種滑鼠事件
-        </button>
-        <p id="status" class="s3">滑鼠離開</p>
-
+          </P>
           <p>This standards compliant, simple, fixed width website template is released as an 'open source' design (under the Creative Commons Attribution 3.0 Licence), which means that you are free to download and use it for anything you want (including modifying and amending it). If you wish to remove the 'ARaynorDesign' link in the footer of the template, please contact me first, but other than that...</p>
           <h3>Place your heading here</h3>
           <div style="width:200px; float:left; padding: 0px 20px 10px 0px;"><img alt="image" src="images/image.jpg" /></div>
@@ -157,7 +157,9 @@
       </div><!--close content-->	
     </div><!--close site_content-->	
     <div id="footer">  
-      &copy;版權所有 2024 by 110570025陳盈蓁
+	  <div id="footer_content">
+版權所有，&copy; designed by 陳盈蓁 ， 2024
+      </div><!--close footer_content-->	
     </div><!--close footer-->	
   </div><!--close main-->	
 </body>
