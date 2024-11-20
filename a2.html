@@ -2,13 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 
 <head>
-  <title>110570025 陳盈蓁</title>
+  <title>110570025陳盈蓁</title>
   <meta name="description" content="free website template" />
   <meta name="keywords" content="enter your keywords here" />
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <link rel="stylesheet" type="text/css" href="css/mystyle.css" />
-
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/jquery.easing.min.js"></script>
   <script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
@@ -26,70 +25,115 @@
         $('#slider').nivoSlider();
     });
     </script>
-
+    <style>
+      .pink1
+      {
+          background-color: rgb(255, 101, 232);
+      }
+      .y1
+      {
+          background-color: rgb(252, 255, 67);
+      }
+  </style>
 <script>
-  function show()
+  function show1()
   {
-    a1 = parseFloat(t1.value)
-    if(a1>60)
-    {
-      t2.value=t1+"及格"
-      document.getElementById("t2").innerHTML = a1+"及格"
-    }
-    else if(a1==60)
-    {
-      t2.value=t1+"及格"
-      document.getElementById("t2").innerHTML = a1+"及格"
-    }
-    else if(a1<60)
-    {
-      t2.value="不及格"
-      document.getElementById("t2").innerHTML = a1+"不及格"
-    }
+      document.getElementById("t1").className = "pink1"
+      document.getElementById("d1").className = "pink1"
+      document.getElementById("t3").className = "pink1"
+      document.getElementById("d3").className = "pink1"
+      document.getElementById("t5").className = "pink1"
+      document.getElementById("d5").className = "pink1"
+      document.getElementById("t7").className = "pink1"
+      document.getElementById("d7").className = "pink1"
   }
 </script>
+<script>
+  function show2()
+  {
+      document.getElementById("t2").className = "y1"
+      document.getElementById("d2").className = "y1"
+      document.getElementById("t4").className = "y1"
+      document.getElementById("d4").className = "y1"
+      document.getElementById("t6").className = "y1"
+      document.getElementById("d6").className = "y1"
+  }
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E1CK7NJQLR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-E1CK7NJQLR');
+</script>
 </head>
 
 <body>
   <div id="main">	
-	<div id="menubar">
-      <ul class="lavaLampWithImage" id="lava_menu">
-        <li class="current"><a href="index.html">首頁</a></li>
-        <li><a href="a1.html">第1題</a></li>
-        <li><a href="a2.html">第2題</a></li>
-        <li><a href="a3.html">第3題</a></li>
-        <li><a href="a4.html">第4題</a></li>
-        <li><a href="a5.html">GSC截圖</a></li>
-        <li><a href="a6.html">GA截圖</a></li>
-      </ul>
-	</div><!--close menubar-->	    
-	<div id="site_content">        	  
-	  <div id="header"> 
-        <div id="header_name"> 	  
-          <h1>陳盈蓁，作業11</h1>
-        </div><!--close header_name-->	
-        <div id="header_slogan"> 		
-	      <h2>Company Slogan Goes Here</h2>
-		 </div><!--close header_slogan-->	
+    <div id="site_content">  
+	  <div id="menubar">
+        <ul class="lavaLampWithImage" id="lava_menu">
+          <li class="current"><a href="index.html">首頁</a></li>
+          <li><a href="a1.html">第1題</a></li>
+          <li><a href="a2.html">第2題</a></li>
+          <li><a href="a3.html">第3題</a></li>
+          <li><a href="a4.html">GSC圖片</a></li>
+          <li><a href="a5.html">GA圖片</a></li>
+          <li><a href="a6.html">挑戰題</a></li>
+        </ul>
+	  </div><!--close menubar-->
+      <div id="header">  
+        <h1>110570025陳盈蓁</h1>	
       </div><!--close header-->	
 	  <div id="banner_image">
 	    <div id="slider-wrapper">        
           <div id="slider" class="nivoSlider">
             <img src="images/slide1.jpg" alt="" />
             <img src="images/slide2.jpg" alt="" />
-		  </div>
+            <img src="images/slide3.jpg" alt="" />
+		  </div><!--close slider-->
 		</div><!--close slider-wrapper-->
-	  </div><!--close banner_image-->			  
+	  </div><!--close banner_image-->		  
       <div id="content">
         <div class="content_item">
-          <h1>判別是否及格?</h1>
+          <h1 class="s3">設定表格條狀紋理</h1>
           <hr>
-          <p>
-            <input class="s3" type="text" value="55" id="t1" maxlength="6" size="7">
-            <input class="s2" id="b1" onclick="show()" type="button" value="判別是否及格？" size="7">
-          </p>
-          <p class="s3" id="t2"></p>
+          <p class="s4">顏色1：<button onclick="show1()" class="s1">粉色</button></p>
+          <p class="s4">顏色2：<button onclick="show2()" class="s1">黃色</button></p>
+          <table border="1" width="80%" class="s1">
+              <tr>
+                  <td id="t1">姓名</td>
+                  <td id="d1">數學</td>
+              </tr>
+              <tr>
+                  <td id="t2">約翰</td>
+                  <td id="d2">90</td>
+              </tr>
+              <tr>
+                  <td id="t3">艾咪</td>
+                  <td id="d3">92</td>
+              </tr>
+              <tr>
+                <td id="t4">彼得</td>
+                <td id="d4">75</td>
+            </tr>
+            <tr>
+                <td id="t5">蘇珊</td>
+                <td id="d5">99</td>
+            </tr>
+            <tr>
+              <td id="t6">湯姆</td>
+              <td id="d6">62</td>
+          </tr>
+          <tr>
+              <td id="t7">傑克</td>
+              <td id="d7">72</td>
+          </tr>
+          </table>
+  
+
           <p>This standards compliant, simple, fixed width website template is released as an 'open source' design (under the Creative Commons Attribution 3.0 Licence), which means that you are free to download and use it for anything you want (including modifying and amending it). If you wish to remove the 'ARaynorDesign' link in the footer of the template, please contact me first, but other than that...</p>
           <h3>Place your heading here</h3>
           <div style="width:200px; float:left; padding: 0px 20px 10px 0px;"><img alt="image" src="images/image.jpg" /></div>
@@ -129,9 +173,7 @@
       </div><!--close content-->	
     </div><!--close site_content-->	
     <div id="footer">  
-	  <div id="footer_content">
-版權所有，&copy; designed by 陳盈蓁 ， 2024
-      </div><!--close footer_content-->	
+      &copy;版權所有 2024 by 110570025陳盈蓁
     </div><!--close footer-->	
   </div><!--close main-->	
 </body>
